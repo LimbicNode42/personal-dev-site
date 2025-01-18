@@ -7,15 +7,15 @@ function About() {
   return (
     <div className="About">
       <header className="About-header">
-        <h1>Welcome to My React Homepage</h1>
-        <p>This is a simple homepage with an image and links.</p>
-
         {/* Image Section */}
         <img 
           src={`${process.env.PUBLIC_URL}/images/ai-me.png`}  // Replace with your image URL
           alt="Placeholder"
           style={{ width: '400px', height: 'auto', marginBottom: '20px' }}  // Optional inline styling
         />
+        
+        <h1>Welcome to My React Homepage</h1>
+        <p>This is a simple homepage with an image and links.</p>
 
         {/* Links Section */}
         <div>

@@ -11,19 +11,17 @@ function App() {
         {/* Static Toolbar */}
         <nav>
           <ul>
-            <li><Link to="/about">About</Link></li>
+            <li><Link to="/">About</Link></li>
             <li><Link to="/blog">Blog</Link></li>
           </ul>
         </nav>
 
-        {/* Main content */}
-        <div style={{ marginTop: '50px' }}>
-          <Routes>
-            {/* Default route - redirects to /about */}
-            <Route path="/" element={<Navigate to="/about" />} /> 
+        {/* <hr></hr> */}
 
-            {/* Other Routes */}
-            <Route path="/about" element={<About />} />
+        {/* Main content */}
+        <div>
+          <Routes>
+            <Route path="/" element={<About />} />
             <Route path="/blog" element={<Blog />} />
           </Routes>
         </div>
