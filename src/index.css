@@ -13,4 +13,8 @@
   code {
     font-family: theme('fontFamily.mono');
   }
+  
+  a {
+    @apply text-blue-700;
+  }
 }

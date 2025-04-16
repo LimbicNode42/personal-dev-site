@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Link, Routes, Navigate } from 'react-router-dom';
 import About from './components/About';  // Import About component
 import Blog from './components/Blog';
+import HomeLab from './components/HomeLab';
 
 function App() {
   return (
@@ -26,6 +27,14 @@ function App() {
                 Blog
               </Link>
             </li>
+            <li>
+              <Link
+                to="/home-lab"
+                className="text-gray-800 text-lg px-4 py-2 rounded hover:bg-gray-300 no-underline"
+              >
+                Lab
+              </Link>
+            </li>
           </ul>
         </nav>
 
@@ -34,6 +43,7 @@ function App() {
           <Routes>
             <Route path="/" element={<About />} />
             <Route path="/blog" element={<Blog />} />
+            <Route path="/home-lab" element={<HomeLab />} />
           </Routes>
         </div>
       </div>
