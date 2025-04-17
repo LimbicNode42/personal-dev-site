@@ -188,7 +188,7 @@ function HomeLab() {
             <a href="https://alpinelinux.org/" target="_blank" rel="noreferrer">Alpine 3.18</a>
           </li>
           <li>
-            NAS - {" "}
+            NAS VM - {" "}
             <a href="https://www.openmediavault.org/" target="_blank" rel="noreferrer">OpenMediaVault 7.6.0-1 (Sandworm)</a>
           </li>
         </ul>
@@ -214,6 +214,57 @@ function HomeLab() {
                 Check out: <a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/" target="_blank" rel="noreferrer">https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/</a>
               </li>
             </ul>
+          </li>
+        </ul>
+      </div>
+
+      {/* Self Hosted Section */}
+      <div>
+        <h4 className="text-xl font-medium mb-2">Self Hosted:</h4>
+        <ul className="list-disc list-inside space-y-1">
+          <li>
+            Zero Trust Proxy Tunnel - {" "}
+            <a href="https://github.com/cloudflare/cloudflared" target="_blank" rel="noreferrer">cloudflared (Cloudflare Tunnel Client)</a>
+          </li>
+          <li>
+            Reverse Proxy, Load Balancer - {" "}
+            <a href="https://github.com/traefik/traefik" target="_blank" rel="noreferrer">Traefik</a> {" & "}
+            <a href="https://github.com/nginx/nginx" target="_blank" rel="noreferrer">Nginx</a>
+          </li>
+          <li>
+            Database - {" "}
+            <a href="https://github.com/postgres/postgres" target="_blank" rel="noreferrer">Postgres</a> {" & "}
+            <a href="https://github.com/mongodb/mongo" target="_blank" rel="noreferrer">MongoDB</a> {" & "}
+            <a href="https://github.com/redis-stack/redis-stack?tab=readme-ov-file" target="_blank" rel="noreferrer">Redis</a>
+          </li>
+          <li>
+            IAM - {" "}
+            <a href="https://github.com/keycloak/keycloak" target="_blank" rel="noreferrer">Keycloak</a>
+          </li>
+          <li>
+            Secret Management - {" "}
+            <a href="https://github.com/Infisical/infisical" target="_blank" rel="noreferrer">Infisical</a>
+          </li>
+          <li>
+            CI/CD Pipeline - {" "}
+            <a href="https://github.com/nazmulb/drone.io" target="_blank" rel="noreferrer">Drone CI</a> {" "}
+            <i>w/ GitHub Runners</i>
+          </li>
+          <li>
+            Artifact Repository - {" "}
+            <a href="https://github.com/distribution/distribution" target="_blank" rel="noreferrer">Distribution Registry</a>
+          </li>
+          <li>
+            Media Server - {" "}
+            <a href="https://github.com/jellyfin/jellyfin" target="_blank" rel="noreferrer">Jellyfin</a>
+          </li>
+          <li>
+            Dashboard - {" "}
+            <a href="https://github.com/ajnart/homarr" target="_blank" rel="noreferrer">Homarr</a>
+          </li>
+          <li>
+            Utils - {" "}
+            <a href="https://github.com/CorentinTh/it-tools" target="_blank" rel="noreferrer">IT Tools</a>
           </li>
         </ul>
       </div>
