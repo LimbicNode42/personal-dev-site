@@ -94,7 +94,7 @@ function HomeLab() {
         </ul>
       </div>
 
-      {/* Workstationo Section */}
+      {/* Workstation Section */}
       <div>
         <h4 className="text-xl font-medium mb-2">Workstation:</h4>
         <ul className="list-disc list-inside space-y-1">
@@ -227,15 +227,21 @@ function HomeLab() {
             <a href="https://github.com/cloudflare/cloudflared" target="_blank" rel="noreferrer">cloudflared (Cloudflare Tunnel Client)</a>
           </li>
           <li>
-            Reverse Proxy, Load Balancer - {" "}
+            Reverse Proxy, Load Balancer, CDN - {" "}
             <a href="https://github.com/traefik/traefik" target="_blank" rel="noreferrer">Traefik</a> {" & "}
             <a href="https://github.com/nginx/nginx" target="_blank" rel="noreferrer">Nginx</a>
+          </li>
+          <li>
+            Container Management - {" "}
+            <a href="https://github.com/portainer/portainer" target="_blank" rel="noreferrer">Portainer</a> {" & "}
+            <a href="https://github.com/portainer/agent" target="_blank" rel="noreferrer">Portainer Agent</a>
           </li>
           <li>
             Database - {" "}
             <a href="https://github.com/postgres/postgres" target="_blank" rel="noreferrer">Postgres</a> {" & "}
             <a href="https://github.com/mongodb/mongo" target="_blank" rel="noreferrer">MongoDB</a> {" & "}
-            <a href="https://github.com/redis-stack/redis-stack?tab=readme-ov-file" target="_blank" rel="noreferrer">Redis</a>
+            <a href="https://github.com/redis-stack/redis-stack" target="_blank" rel="noreferrer">Redis</a> {" & "}
+            <a href="https://github.com/influxdata/influxdb" target="_blank" rel="noreferrer">InfluxDB</a>
           </li>
           <li>
             IAM - {" "}
@@ -247,8 +253,8 @@ function HomeLab() {
           </li>
           <li>
             CI/CD Pipeline - {" "}
-            <a href="https://github.com/nazmulb/drone.io" target="_blank" rel="noreferrer">Drone CI</a> {" "}
-            <i>w/ GitHub Runners</i>
+            <a href="https://github.com/nazmulb/drone.io" target="_blank" rel="noreferrer">DroneCI</a> {" & "}
+            <a href="https://github.com/drone-runners/drone-runner-docker" target="_blank" rel="noreferrer">DroneCI Runners</a>
           </li>
           <li>
             Artifact Repository - {" "}
@@ -259,12 +265,31 @@ function HomeLab() {
             <a href="https://github.com/jellyfin/jellyfin" target="_blank" rel="noreferrer">Jellyfin</a>
           </li>
           <li>
+            Media Requests - {" "}
+            <a href="https://github.com/fallenbagel/jellyseerr" target="_blank" rel="noreferrer">Jellyseerr</a>
+          </li>
+          <li>
+            Media Managers - {" "}
+            <a href="https://github.com/Radarr/Radarr" target="_blank" rel="noreferrer">Radarr (movies)</a> {" & "}
+            <a href="https://github.com/Sonarr/Sonarr" target="_blank" rel="noreferrer">Sonarr (tv series)</a> {" & "}
+            <a href="https://github.com/Prowlarr/Prowlarr" target="_blank" rel="noreferrer">Prowlarr (indexer)</a>
+          </li>
+          <li>
+            Media Downloaders - {" "}
+            <a href="https://github.com/qbittorrent/qBittorrent" target="_blank" rel="noreferrer">qBittorrent</a> {" & "}
+            <a href="https://github.com/nzbgetcom/nzbget" target="_blank" rel="noreferrer">NZBGet</a>
+          </li>
+          <li>
             Dashboard - {" "}
             <a href="https://github.com/ajnart/homarr" target="_blank" rel="noreferrer">Homarr</a>
           </li>
           <li>
             Utils - {" "}
             <a href="https://github.com/CorentinTh/it-tools" target="_blank" rel="noreferrer">IT Tools</a>
+          </li>
+          <li>
+            Observability Visualization - {" "}
+            <a href="https://github.com/grafana/grafana" target="_blank" rel="noreferrer">Grafana OSS</a>
           </li>
         </ul>
       </div>
