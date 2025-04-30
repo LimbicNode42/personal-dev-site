@@ -17,4 +17,8 @@
   a {
     @apply text-blue-700;
   }
+
+  hr {
+    @apply my-8 border-t border-gray-300;
+  }
 }

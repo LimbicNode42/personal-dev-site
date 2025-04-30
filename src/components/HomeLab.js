@@ -1,329 +1,385 @@
-// src/components/Blog.js
-import React from 'react';
+import React from "react";
 
 function HomeLab() {
   return (
-    <div className="max-w-5xl w-[70%] mx-auto px-4 py-10 space-y-8">
-      {/* Title */}
-      <div>
-        <h2 className="text-3xl font-bold text-center">My Home Lab</h2>
+    <div className="px-6 pb-10 pt-0 max-w-5xl mx-auto">
+      <div className="text-center mb-6">
+        <div className="text-5xl mb-1">🏠</div>
+        <h1 className="text-3xl font-bold">Home Lab</h1>
       </div>
 
-      <div className="text-center text-gray-700">
-        <p>Informal Public CMDB</p>
+      <hr></hr>
+
+      <div className="text-center mb-2">
+        <div className="text-4xl mb-1">⚙️</div>
+        <h1 className="text-3xl font-bold">Hardware</h1>
       </div>
 
-      <hr className="w-full border-t border-gray-300" />
+      <div className="grid md:grid-cols-3 gap-x-8 gap-y-12 text-center">
+        <div>
+          <div className="text-3xl mb-2">🖧</div>
+          <h2 className="text-2xl font-semibold mb-2">Networking</h2>
+          <div className="space-y-2">
+            <p>
+              <a href="https://www.amazon.com.au/dp/B09BMLJ9YD?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1" target="_blank" rel="noreferrer" className="text-black">
+                TP-Link AX5400 Router
+              </a>
+            </p>
+            <p>
+              <a href="https://www.tp-link.com/au/business-networking/omada-sdn-switch/tl-sg2008p/" target="_blank" rel="noreferrer" className="text-black">
+                2x TP-Link TL-SG2008P Switch
+              </a>
+            </p>
+          </div>
+        </div>
 
-      {/* Section Title */}
-      <div>
-        <h3 className="text-2xl font-semibold">Hardware</h3>
-      </div>
+        <div>
+          <div className="text-3xl mb-2">💾</div>
+          <h2 className="text-2xl font-semibold mb-2">Storage</h2>
+          <div className="space-y-2">
+            <p>
+              <a href="https://www.amazon.com.au/dp/B09R4HNX4J" target="_blank" rel="noreferrer" className="text-black">
+                Samsung Evo Plus 128GB SDXC
+              </a>
+            </p>
+            <p>
+              <a href="https://www.amazon.com.au/Seagate-IronWolf-ST8000VN004-Internal-Serial/dp/B07SZVVBBK" target="_blank" rel="noreferrer" className="text-black">
+                Seagate IronWolf HDD 8TB
+              </a>
+            </p>
+            <p>
+              <a href="https://www.amazon.com.au/ORICO-Enclosure-Aluminum-Tool-Free-Installation/dp/B086Y757DZ" target="_blank" rel="noreferrer" className="text-black">
+                8 Bay HDD Enclosure
+              </a>
+            </p>
+          </div>
+        </div>
 
-      {/* Network Section */}
-      <div>
-        <h4 className="text-xl font-medium mb-2">Network:</h4>
-        <ul className="list-disc list-inside space-y-1">
-          <li>
-            <a href="https://www.amazon.com.au/dp/B09BMLJ9YD?ref_=ppx_hzsearch_conn_dt_b_fed_asin_title_1" target="_blank" rel="noreferrer">
-              TP-Link AX5400 Dual-Band 6-Stream Gbps Wi-Fi 6 Router
-            </a>
-          </li>
-          <li>
-            <a href="https://www.tp-link.com/au/business-networking/omada-sdn-switch/tl-sg2008p/" target="_blank" rel="noreferrer">
-              TP-Link TL-SG2008P JetStream 8-Port Gigabit Smart Switch with 4-Port PoE+
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      {/* Compute Section */}
-      <div>
-        <h4 className="text-xl font-medium mb-2">Compute:</h4>
-        <ul className="list-disc list-inside space-y-1">
-          <li>
-            <a href="https://www.amazon.com.au/ASUS-GR8-II-T069Z-Desktop-i5-7400/dp/B06X16343X" target="_blank" rel="noreferrer">
-              ASUS GR8 II-T069Z Mini PC
-            </a>
-          </li>
-          <li>
-            <a href="https://www.jaycar.com.au/raspberry-pi-4b-single-board-computer-8gb/p/XC9104" target="_blank" rel="noreferrer">
-              Raspberry Pi 4B Single Board Computer 8GB
-            </a>{" "}
-            <i>x3</i>
-          </li>
-          <li>
-            <a href="https://www.amazon.com.au/dp/B0CK2FCG1K" target="_blank" rel="noreferrer">
-              Raspberry Pi 5 Model B 8GB LPDDR4 2.4GHz Quad-Core ARM Cortex-A76
-            </a>
-          </li>
-          <li>
-            <a href="https://www.amazon.com.au/dp/B07JPXR9ZN" target="_blank" rel="noreferrer">
-              DSLRKIT Power Over Ethernet PoE HAT
-            </a>{" "}
-            <i>x3</i>
-          </li>
-          <li>
-            <a href="https://www.amazon.com.au/dp/B0CR41XZ15" target="_blank" rel="noreferrer">
-              waveshare Power Over Ethernet HAT
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      {/* Storage Section */}
-      <div>
-        <h4 className="text-xl font-medium mb-2">Storage:</h4>
-        <ul className="list-disc list-inside space-y-1">
-          <li>
-            <a href="https://www.amazon.com.au/dp/B09R4HNX4J" target="_blank" rel="noreferrer">
-              Samsung Evo Plus 128GB SDXC U3 Class 10 A2 130MB/s
-            </a>{" "}
-            <i>x4</i>
-          </li>
-          <li>
-            <a href="https://www.amazon.com.au/Seagate-IronWolf-ST8000VN004-Internal-Serial/dp/B07SZVVBBK" target="_blank" rel="noreferrer">
-              Seagate 8TB 3.5" 7200rpm SATA IronWolf NAS HDD PN ST8000VN004
-            </a>
-          </li>
-          <li>
-            <a href="https://www.amazon.com.au/ORICO-Enclosure-Aluminum-Tool-Free-Installation/dp/B086Y757DZ" target="_blank" rel="noreferrer">
-              ORICO 8 Bay Enclosure Aluminum Type-C 3.5inch to SATA III Hard Drive Enclosure
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      {/* Workstation Section */}
-      <div>
-        <h4 className="text-xl font-medium mb-2">Workstation:</h4>
-        <ul className="list-disc list-inside space-y-1">
-          <li>
-            <a href="https://www.amazon.com.au/Philips-Line-253V7LJAB-Computer-Monitor/dp/B07W1XSJLW" target="_blank" rel="noreferrer">
-              Philips V Line 253V7LJAB/00 Computer Monitor 62.2 cm (24.5") Full HD LCD Flat
-            </a>{" "}
-            <i>x3</i>
-          </li>
-          <li>
-            <a href="https://www.laptopsdirect.co.uk/hp_w2448hc_24_inch_lcd_monitor_ku912aa/version.asp" target="_blank" rel="noreferrer">
-              HP w2448hc 24 inch LCD Monitor
-            </a>
-          </li>
-          <li>
-            <a href="https://www.amazon.com.au/Logitech-Low-Profile-Double-Shot-Programmable-Backlighting/dp/B0DDY15G7X" target="_blank" rel="noreferrer">
-              Logitech G915 X Lightspeed TKL Low-Profile
-            </a>
-          </li>
-          <li>
-            <a href="https://www.amazon.com.au/dp/B0B11LJ69K" target="_blank" rel="noreferrer">
-              Logitech MX Master 3S
-            </a>
-          </li>
-          <li>
-            <a href="https://www.audeze.com/products/maxwell-wireless-gaming-headset" target="_blank" rel="noreferrer">
-              Audeze Maxwell Wireless Gaming Headset
-            </a>
-          </li>
-        </ul>
-      </div>
-
-      {/* Peripherals Section */}
-      <div>
-        <h4 className="text-xl font-medium mb-2">Peripherals:</h4>
-        <ul className="list-disc list-inside space-y-1">
-          <li>
-            <a href="https://www.amazon.com.au/Philips-Line-253V7LJAB-Computer-Monitor/dp/B07W1XSJLW" target="_blank" rel="noreferrer">
-              Philips V Line 253V7LJAB/00 Computer Monitor 62.2 cm (24.5") Full HD LCD Flat
-            </a>{" "}
-            <i>x3</i>
-          </li>
-          <li>
-            <a href="https://www.laptopsdirect.co.uk/hp_w2448hc_24_inch_lcd_monitor_ku912aa/version.asp" target="_blank" rel="noreferrer">
-              HP w2448hc 24 inch LCD Monitor
-            </a>
-          </li>
-          <li>
-            <a href="https://www.amazon.com.au/Logitech-Low-Profile-Double-Shot-Programmable-Backlighting/dp/B0DDY15G7X" target="_blank" rel="noreferrer">
-              Logitech G915 X Lightspeed TKL Low-Profile
-            </a>
-          </li>
-          <li>
-            <a href="https://www.amazon.com.au/dp/B0B11LJ69K" target="_blank" rel="noreferrer">
-              Logitech MX Master 3S
-            </a>
-          </li>
-          <li>
-            <a href="https://www.audeze.com/products/maxwell-wireless-gaming-headset" target="_blank" rel="noreferrer">
-              Audeze Maxwell Wireless Gaming Headset
-            </a>
-          </li>
-        </ul>
+        <div>
+          <div className="text-3xl mb-2">🧠</div>
+          <h2 className="text-2xl font-semibold mb-2">Compute</h2>
+          <div className="space-y-2">
+            <p>
+              <a href="https://www.amazon.com.au/ASUS-GR8-II-T069Z-Desktop-i5-7400/dp/B06X16343X" target="_blank" rel="noreferrer" className="text-black">
+                ASUS GR8 Mini PC
+              </a>
+            </p>
+            <p>
+              <a href="https://www.jaycar.com.au/raspberry-pi-4b-single-board-computer-8gb/p/XC9104" target="_blank" rel="noreferrer" className="text-black">
+                3x Raspberry Pi 4 8GB
+              </a>
+            </p>
+            <p>
+              <a href="https://www.amazon.com.au/dp/B0CK2FCG1K" target="_blank" rel="noreferrer" className="text-black">
+                Raspberry Pi 5 8GB
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
 
       <br></br>
 
+      <div className="grid md:grid-cols-2 gap-8 text-center">
+      <div>
+          <div className="text-3xl mb-2">🖥️</div>
+          <h2 className="text-2xl font-semibold mb-2">Workstation</h2>
+          <div className="space-y-2">
+            <p>
+              <a href="https://www.amazon.com.au/Philips-Line-253V7LJAB-Computer-Monitor/dp/B07W1XSJLW" target="_blank" rel="noreferrer" className="text-black">
+                Philips 253V 1080p 24.5" LCD Monitor
+              </a>
+            </p>
+            <p>
+              <a href="https://www.laptopsdirect.co.uk/hp_w2448hc_24_inch_lcd_monitor_ku912aa/version.asp" target="_blank" rel="noreferrer" className="text-black">
+                HP w2448hc 1080p 24" LCD Monitor
+              </a>
+            </p>
+            <p>
+              <a href="https://www.amazon.com.au/Logitech-Low-Profile-Double-Shot-Programmable-Backlighting/dp/B0DDY15G7X" target="_blank" rel="noreferrer" className="text-black">
+                Logitech G915 TKL Low-Profile
+              </a>
+            </p>
+            <p>
+              <a href="https://www.amazon.com.au/dp/B0B11LJ69K" target="_blank" rel="noreferrer" className="text-black">
+                Logitech MX Master 3S
+              </a>
+            </p>
+            <p>
+              <a href="https://www.audeze.com/products/maxwell-wireless-gaming-headset" target="_blank" rel="noreferrer" className="text-black">
+                Audeze Maxwell Wireless Headset
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div className="text-3xl mb-2">🎧</div>
+          <h2 className="text-2xl font-semibold mb-2">Peripherals</h2>
+          <div className="space-y-2">
+            <p>
+              <a href="https://www.amazon.com.au/Philips-Line-253V7LJAB-Computer-Monitor/dp/B07W1XSJLW" target="_blank" rel="noreferrer" className="text-black">
+                2x Philips 253V 1080p 24.5" LCD Monitor
+              </a>
+            </p>
+            <p>
+              <a href="https://www.laptopsdirect.co.uk/hp_w2448hc_24_inch_lcd_monitor_ku912aa/version.asp" target="_blank" rel="noreferrer" className="text-black">
+                HP w2448hc 1080p 24" LCD Monitor
+              </a>
+            </p>
+            <p>
+              <a href="https://www.amazon.com.au/Logitech-Low-Profile-Double-Shot-Programmable-Backlighting/dp/B0DDY15G7X" target="_blank" rel="noreferrer" className="text-black">
+                Logitech G915 TKL Low-Profile
+              </a>
+            </p>
+            <p>
+              <a href="https://www.amazon.com.au/dp/B0B11LJ69K" target="_blank" rel="noreferrer" className="text-black">
+                Logitech MX Master 3S
+              </a>
+            </p>
+            <p>
+              <a href="https://www.audeze.com/products/maxwell-wireless-gaming-headset" target="_blank" rel="noreferrer" className="text-black">
+                Audeze Maxwell Wireless Headset
+              </a>
+            </p>
+            <p>
+              <a href="https://store.haworth.com/products/fern-office-chair?srsltid=AfmBOoq2bJ-7aiwqmXXKzz4sHa4BXaa3PO5M1-w82VD31nNOiJZeIukf" target="_blank" rel="noreferrer" className="text-black">
+                Haworth Fern Office Chair
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr></hr>
+
+      <div className="text-center mb-2">
+        <div className="text-4xl mb-1">📦</div>
+        <h1 className="text-3xl font-bold">Software</h1>
+      </div>
+
+      <div className="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div className="text-3xl mb-2">🐧</div>
+          <h2 className="text-2xl font-semibold mb-2">Operating System</h2>
+          <div className="space-y-2">
+            <p>
+              <a href="https://www.debian.org/" target="_blank" rel="noreferrer" className="text-black">
+                Debian 12 (bookworm)
+              </a>
+            </p>
+            <p>
+              <a href="https://alpinelinux.org/" target="_blank" rel="noreferrer" className="text-black">
+                Alpine 3.18
+              </a>
+            </p>
+            <p>
+              <a href="https://www.openmediavault.org/" target="_blank" rel="noreferrer" className="text-black">
+                OpenMediaVault 7.6.0-1 (Sandworm)
+              </a>
+            </p>
+            <p>
+              <a href="https://www.proxmox.com/en/products/proxmox-virtual-environment/overview" target="_blank" rel="noreferrer" className="text-black">
+                Proxmox Virtual Environmnet
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div className="text-3xl mb-2">☁️</div>
+          <h2 className="text-2xl font-semibold mb-2">Cloud Tooling</h2>
+          <div className="space-y-2">
+            <p>
+              <a href="https://www.omadanetworks.com/au/business-networking/omada-controller-cloud-software/omada-software-controller/" target="_blank" rel="noreferrer" className="text-black">
+                Omada SDN Controller
+              </a>
+            </p>
+            <p>
+              <a href="https://www.cloudflare.com/en-au/" target="_blank" rel="noreferrer" className="text-black">
+                CloudFlare
+              </a>
+            </p>
+            <p>
+              <a href="https://www.cloudflare.com/en-au/zero-trust/products/access/" target="_blank" rel="noreferrer" className="text-black">
+                CloudFlare Zero Trust
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div className="text-3xl mb-2">🌐</div>
+          <h2 className="text-2xl font-semibold mb-2">Networking</h2>
+          <div className="space-y-2">
+            <p>
+              <a href="https://github.com/traefik/traefik" target="_blank" rel="noreferrer" className="text-black">
+                Traefik
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/nginx/nginx" target="_blank" rel="noreferrer" className="text-black">
+                Nginx
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/cloudflare/cloudflared" target="_blank" rel="noreferrer" className="text-black">
+                cloudflared
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <br></br>
+
+      <div className="grid md:grid-cols-3 gap-8 text-center">
+        <div>
+          <div className="text-3xl mb-2">🗄️</div>
+          <h2 className="text-2xl font-semibold mb-2">Database</h2>
+          <div className="space-y-2">
+            <p>
+              <a href="https://github.com/postgres/postgres" target="_blank" rel="noreferrer" className="text-black">
+                Postgres
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/mongodb/mongo" target="_blank" rel="noreferrer" className="text-black">
+                MongoDB
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/redis-stack/redis-stack" target="_blank" rel="noreferrer" className="text-black">
+                Redis
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/influxdata/influxdb" target="_blank" rel="noreferrer" className="text-black">
+                InfluxDB
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div className="text-3xl mb-2">🚀</div>
+          <h2 className="text-2xl font-semibold mb-2">Deployment</h2>
+          <div className="space-y-2">
+            <p>
+              <a href="https://github.com/Infisical/infisical" target="_blank" rel="noreferrer" className="text-black">
+                Infisical
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/distribution/distribution" target="_blank" rel="noreferrer" className="text-black">
+                Distribution Registry
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/nazmulb/drone.io" target="_blank" rel="noreferrer" className="text-black">
+                DroneCI
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/drone-runners/drone-runner-docker" target="_blank" rel="noreferrer" className="text-black">
+                DroneCI Runners
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/portainer/portainer" target="_blank" rel="noreferrer" className="text-black">
+              Portainer
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/portainer/agent" target="_blank" rel="noreferrer" className="text-black">
+                Portainer Agent
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/keycloak/keycloak" target="_blank" rel="noreferrer" className="text-black">
+                Keycloak
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div className="text-3xl mb-2">📊</div>
+          <h2 className="text-2xl font-semibold mb-2">Observability</h2>
+          <div className="space-y-2">
+            <p>
+              <a href="https://github.com/grafana/grafana" target="_blank" rel="noreferrer" className="text-black">
+                Grafana OSS
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
       
+      <br></br>
 
-      {/* Section Title */}
+      <div className="grid md:grid-cols-2 gap-8 text-center">
       <div>
-        <h3 className="text-2xl font-semibold">Software</h3>
+          <div className="text-3xl mb-2">🎬</div>
+          <h2 className="text-2xl font-semibold mb-2">Media</h2>
+          <div className="space-y-2">
+            <p>
+              <a href="https://github.com/jellyfin/jellyfin" target="_blank" rel="noreferrer" className="text-black">
+                Jellyfin
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/fallenbagel/jellyseerr" target="_blank" rel="noreferrer" className="text-black">
+                Jellyseerr
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/Radarr/Radarr" target="_blank" rel="noreferrer" className="text-black">
+                Radarr
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/Sonarr/Sonarr" target="_blank" rel="noreferrer" className="text-black">
+                Sonarr
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/Prowlarr/Prowlarr" target="_blank" rel="noreferrer" className="text-black">
+                Prowlarr
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/qbittorrent/qBittorrent" target="_blank" rel="noreferrer" className="text-black">
+                qBittorrent
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/nzbgetcom/nzbget" target="_blank" rel="noreferrer" className="text-black">
+                NZBGet
+              </a>
+            </p>
+          </div>
+        </div>
+
+        <div>
+          <div className="text-3xl mb-2">🧩</div>
+          <h2 className="text-2xl font-semibold mb-2">Other</h2>
+          <div className="space-y-2">
+            <p>
+              <a href="https://github.com/ajnart/homarr" target="_blank" rel="noreferrer" className="text-black">
+                Homarr
+              </a>
+            </p>
+            <p>
+              <a href="https://github.com/CorentinTh/it-tools" target="_blank" rel="noreferrer" className="text-black">
+                IT Tools
+              </a>
+            </p>
+          </div>
+        </div>
       </div>
 
-      {/* OS Section */}
-      <div>
-        <h4 className="text-xl font-medium mb-2">Operating System:</h4>
-        <ul className="list-disc list-inside space-y-1">
-          <li>
-            Bare Metal - {" "}
-            <a href="https://www.debian.org/" target="_blank" rel="noreferrer">Debian 12 (bookworm)</a> {" "}
-            <i>vanilla + PiOS w/ Pimox</i>
-            <ul className="list-disc list-inside pl-6 mt-1 text-sm text-gray-700">
-              <li>
-                Check out: <a href="https://pimylifeup.com/raspberry-pi-proxmox/" target="_blank" rel="noreferrer">https://pimylifeup.com/raspberry-pi-proxmox/</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            Containers - {" "}
-            <a href="https://alpinelinux.org/" target="_blank" rel="noreferrer">Alpine 3.18</a>
-          </li>
-          <li>
-            NAS VM - {" "}
-            <a href="https://www.openmediavault.org/" target="_blank" rel="noreferrer">OpenMediaVault 7.6.0-1 (Sandworm)</a>
-          </li>
-        </ul>
-      </div>
-
-      {/* Cloud Section */}
-      <div>
-        <h4 className="text-xl font-medium mb-2">Cloud:</h4>
-        <ul className="list-disc list-inside space-y-1">
-          <li>
-            Network Management - {" "}
-            <a href="https://www.omadanetworks.com/au/business-networking/omada-controller-cloud-software/omada-software-controller/" target="_blank" rel="noreferrer">Omada SDN Controller</a>
-          </li>
-          <li>
-            CDN, DNS, DDoS protection, etc. - {" "}
-            <a href="https://www.cloudflare.com/en-au/" target="_blank" rel="noreferrer">CloudFlare</a>
-          </li>
-          <li>
-            Zero Trust Proxy (instead of VPN) - {" "}
-            <a href="https://www.cloudflare.com/en-au/zero-trust/products/access/" target="_blank" rel="noreferrer">CloudFlare Zero Trust</a>
-            <ul className="list-disc list-inside pl-6 mt-1 text-sm text-gray-700">
-              <li>
-                Check out: <a href="https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/" target="_blank" rel="noreferrer">https://developers.cloudflare.com/cloudflare-one/connections/connect-networks/get-started/</a>
-              </li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      {/* Self Hosted Section */}
-      <div>
-        <h4 className="text-xl font-medium mb-2">Self Hosted:</h4>
-        <ul className="list-disc list-inside space-y-1">
-          <li>
-            Zero Trust Proxy Tunnel - {" "}
-            <a href="https://github.com/cloudflare/cloudflared" target="_blank" rel="noreferrer">cloudflared (Cloudflare Tunnel Client)</a>
-          </li>
-          <li>
-            Reverse Proxy, Load Balancer, CDN - {" "}
-            <a href="https://github.com/traefik/traefik" target="_blank" rel="noreferrer">Traefik</a> {" & "}
-            <a href="https://github.com/nginx/nginx" target="_blank" rel="noreferrer">Nginx</a>
-          </li>
-          <li>
-            Container Management - {" "}
-            <a href="https://github.com/portainer/portainer" target="_blank" rel="noreferrer">Portainer</a> {" & "}
-            <a href="https://github.com/portainer/agent" target="_blank" rel="noreferrer">Portainer Agent</a>
-          </li>
-          <li>
-            Database - {" "}
-            <a href="https://github.com/postgres/postgres" target="_blank" rel="noreferrer">Postgres</a> {" & "}
-            <a href="https://github.com/mongodb/mongo" target="_blank" rel="noreferrer">MongoDB</a> {" & "}
-            <a href="https://github.com/redis-stack/redis-stack" target="_blank" rel="noreferrer">Redis</a> {" & "}
-            <a href="https://github.com/influxdata/influxdb" target="_blank" rel="noreferrer">InfluxDB</a>
-          </li>
-          <li>
-            IAM - {" "}
-            <a href="https://github.com/keycloak/keycloak" target="_blank" rel="noreferrer">Keycloak</a>
-          </li>
-          <li>
-            Secret Management - {" "}
-            <a href="https://github.com/Infisical/infisical" target="_blank" rel="noreferrer">Infisical</a>
-          </li>
-          <li>
-            CI/CD Pipeline - {" "}
-            <a href="https://github.com/nazmulb/drone.io" target="_blank" rel="noreferrer">DroneCI</a> {" & "}
-            <a href="https://github.com/drone-runners/drone-runner-docker" target="_blank" rel="noreferrer">DroneCI Runners</a>
-          </li>
-          <li>
-            Artifact Repository - {" "}
-            <a href="https://github.com/distribution/distribution" target="_blank" rel="noreferrer">Distribution Registry</a>
-          </li>
-          <li>
-            Media Server - {" "}
-            <a href="https://github.com/jellyfin/jellyfin" target="_blank" rel="noreferrer">Jellyfin</a>
-          </li>
-          <li>
-            Media Requests - {" "}
-            <a href="https://github.com/fallenbagel/jellyseerr" target="_blank" rel="noreferrer">Jellyseerr</a>
-          </li>
-          <li>
-            Media Managers - {" "}
-            <a href="https://github.com/Radarr/Radarr" target="_blank" rel="noreferrer">Radarr (movies)</a> {" & "}
-            <a href="https://github.com/Sonarr/Sonarr" target="_blank" rel="noreferrer">Sonarr (tv series)</a> {" & "}
-            <a href="https://github.com/Prowlarr/Prowlarr" target="_blank" rel="noreferrer">Prowlarr (indexer)</a>
-          </li>
-          <li>
-            Media Downloaders - {" "}
-            <a href="https://github.com/qbittorrent/qBittorrent" target="_blank" rel="noreferrer">qBittorrent</a> {" & "}
-            <a href="https://github.com/nzbgetcom/nzbget" target="_blank" rel="noreferrer">NZBGet</a>
-          </li>
-          <li>
-            Dashboard - {" "}
-            <a href="https://github.com/ajnart/homarr" target="_blank" rel="noreferrer">Homarr</a>
-          </li>
-          <li>
-            Utils - {" "}
-            <a href="https://github.com/CorentinTh/it-tools" target="_blank" rel="noreferrer">IT Tools</a>
-          </li>
-          <li>
-            Observability Visualization - {" "}
-            <a href="https://github.com/grafana/grafana" target="_blank" rel="noreferrer">Grafana OSS</a>
-          </li>
-        </ul>
-      </div>
-
-      {/* Section Title */}
-      <div>
-        <h3 className="text-2xl font-semibold">Repositories</h3>
-      </div>
-
-      {/* Self Hosted Section */}
-      <div>
-        <ul className="list-disc list-inside space-y-1">
-          <li>
-            Scripts - {" "}
-            <a href="https://github.com/LimbicNode42/home-lab" target="_blank" rel="noreferrer">home-lab</a>
-          </li>
-          <li>
-            Backend (unpublished) - {" "}
-            <a href="https://github.com/LimbicNode42/personal-backend" target="_blank" rel="noreferrer">personal-backend</a>
-          </li>
-          <li>
-            Personal Backoffice Website (private, unpublished) - {" "}
-            <a href="https://github.com/LimbicNode42/personal-backoffice" target="_blank" rel="noreferrer">personal-backoffice</a>
-          </li>
-          <li>
-            Personal Portfolio Website (public, unpublished) - {" "}
-            <a href="https://github.com/LimbicNode42/personal-dev-site" target="_blank" rel="noreferrer">personal-dev-site</a>
-          </li>
-          <li>
-            Personal Mobile Application (private, unpublished) - {" "}
-            <a href="https://github.com/LimbicNode42/productivity-app" target="_blank" rel="noreferrer">productivity-app</a>
-          </li>
-        </ul>
-      </div>
+      <hr></hr> 
     </div>
   );
 }
