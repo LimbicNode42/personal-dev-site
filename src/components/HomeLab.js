@@ -293,6 +293,21 @@ function HomeLab() {
           </li>
         </ul>
       </div>
+
+      {/* Section Title */}
+      <div>
+        <h3 className="text-2xl font-semibold">Repositories</h3>
+      </div>
+
+      {/* Self Hosted Section */}
+      <div>
+        <ul className="list-disc list-inside space-y-1">
+          <li>
+            Scripts - {" "}
+            <a href="https://github.com/LimbicNode42/home-lab" target="_blank" rel="noreferrer">home-lab</a>
+          </li>
+        </ul>
+      </div>
     </div>
   );
 }
