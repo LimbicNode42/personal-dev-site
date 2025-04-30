@@ -306,6 +306,22 @@ function HomeLab() {
             Scripts - {" "}
             <a href="https://github.com/LimbicNode42/home-lab" target="_blank" rel="noreferrer">home-lab</a>
           </li>
+          <li>
+            Backend (unpublished) - {" "}
+            <a href="https://github.com/LimbicNode42/personal-backend" target="_blank" rel="noreferrer">personal-backend</a>
+          </li>
+          <li>
+            Personal Backoffice Website (private, unpublished) - {" "}
+            <a href="https://github.com/LimbicNode42/personal-backoffice" target="_blank" rel="noreferrer">personal-backoffice</a>
+          </li>
+          <li>
+            Personal Portfolio Website (public, unpublished) - {" "}
+            <a href="https://github.com/LimbicNode42/personal-dev-site" target="_blank" rel="noreferrer">personal-dev-site</a>
+          </li>
+          <li>
+            Personal Mobile Application (private, unpublished) - {" "}
+            <a href="https://github.com/LimbicNode42/productivity-app" target="_blank" rel="noreferrer">productivity-app</a>
+          </li>
         </ul>
       </div>
     </div>
